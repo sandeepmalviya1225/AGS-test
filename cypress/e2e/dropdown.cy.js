@@ -10,6 +10,7 @@ describe('template spec', () => {
     it('homepage', () => {
 
         cy.get('#header_logo').should('be.visible');
+        cy.screenshot('header_logo');
        // cy.get('#header_logo').should('have.attr', 'src', 'https://alphaags.iplatformsolutions.com//application/images/ags-header-logo.jpg',);
         
         //cy.get('img[src="GeriatricsCareOnline.org Complex Care. Access to Resources Simplified. header_logo"]').should('contain', 'GeriatricsCareOnline.org Complex Care. Access to Resources Simplified. header_logo');
@@ -18,7 +19,8 @@ describe('template spec', () => {
 
   // cy.get('#header_logo').should(contains(Text,'GeriatricsCareOnline.org Complex Care. Access to Resources Simplified. header_logo'))
 //cy.get('.btn btn-info home-register-btn').click();
-cy.get('.home-register-btn').click(); 
+//cy.get('.home-register-btn').click(); 
+//cy.get('.home-register-btn').click(); 
 
   })
 })
